@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Consultancy </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 50px;
+            background: rgba(15, 23, 42, 0.95);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        .nav-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+
+        .btn-main {
+            background: linear-gradient(45deg, #38bdf8, #6366f1);
+            padding: 14px 35px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(99,102,241,0.4);
+        }
+
+        .btn-main:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(99,102,241,0.6);
+        }
+
+        /* FEATURES */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 80px 50px;
+            flex-wrap: wrap;
+            background: #111827;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 20px;
+            width: 280px;
+            text-align: center;
+            transition: 0.4s;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(56,189,248,0.3);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #38bdf8;
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #6366f1;
+            color: white;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f172a;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #94a3b8;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">🎓 EduAI Consultancy</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/colleges">Colleges</a>
+        
+        <a href="/admin">Admin</a>
+        <a href="/contact">Contact</a>
+    </div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Find Your Perfect College 🚀</h1>
+    <p>Personalized Recommendation System for College Admissions</p>
+    <a href="/colleges" class="btn-main">Explore Colleges</a>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features">
+
+    <div class="card">
+        <h3>🏫 Best Colleges</h3>
+        <p>Explore IITs, NITs, Central & Private Universities across India.</p>
+        <a href="/colleges" class="btn">View Now</a>
+    </div>
+
+    <div class="card">
+        <h3>📊 Analytics Dashboard</h3>
+        <p>Admin panel with student data and analytics charts.</p>
+        <a href="/admin" class="btn">Open Dashboard</a>
+    </div>
+
+    <div class="card">
+        <h3>📞 Contact Support</h3>
+        <p>Need admission help? Our consultancy is ready to guide you.</p>
+        <a href="/contact" class="btn">Contact Now</a>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Education Consultancy AI | Final Year Project</p>
+</footer>
+
+</body>
+</html>

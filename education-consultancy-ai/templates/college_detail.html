@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Details</title>
+    <style>
+        body{
+            margin:0;
+            font-family:Arial;
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            color:white;
+        }
+
+        .container{
+            max-width:900px;
+            margin:40px auto;
+            padding:30px;
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(10px);
+            border-radius:15px;
+        }
+
+        img{
+            width:100%;
+            height:350px;
+            object-fit:cover;
+            border-radius:15px;
+        }
+
+        .badge{
+            background:#00c6ff;
+            padding:6px 12px;
+            border-radius:6px;
+            margin:5px;
+            display:inline-block;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 18px;
+            background:#00c6ff;
+            border-radius:8px;
+            text-decoration:none;
+            color:white;
+        }
+
+        table{
+            width:100%;
+            margin-top:20px;
+            border-collapse:collapse;
+        }
+
+        th,td{
+            padding:10px;
+            border:1px solid white;
+            text-align:center;
+        }
+
+        th{
+            background:#00c6ff;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+{% if college %}
+    <img src="{{ college.image }}">
+    <h1>{{ college.name }}</h1>
+    <p>📍 {{ college.location }}, {{ college.state }}</p>
+    <p>⭐ Rating: {{ college.rating }}/5</p>
+
+    <h3>Courses:</h3>
+    {% for course in college.courses %}
+        <span class="badge">{{ course }}</span>
+    {% endfor %}
+
+    <!-- NEW FULL DETAIL SECTION -->
+
+    {% if college.course_details %}
+
+    <h3>Course Details</h3>
+
+    <table>
+
+        <tr>
+            <th>Course</th>
+            <th>Fees</th>
+            <th>Eligibility</th>
+            <th>Exams</th>
+        </tr>
+
+        {% for course in college.course_details %}
+
+        <tr>
+            <td>{{ course.course }}</td>
+            <td>{{ course.fees }}</td>
+            <td>{{ course.eligibility }}</td>
+            <td>{{ course.exams }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    {% endif %}
+
+{% else %}
+    <h2>College Not Found</h2>
+{% endif %}
+
+<br>
+<a href="/colleges" class="btn">⬅ Back</a>
+
+</div>
+
+</body>
+</html>

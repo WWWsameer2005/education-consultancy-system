@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Education Consultancy </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f4037, #99f2c8);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar h2 {
+            color: white;
+        }
+
+        .navbar .btn {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .navbar .btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            margin-bottom: 20px;
+        }
+
+        .input {
+            width: 80%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        textarea.input {
+            resize: none;
+        }
+
+        .btn-submit {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0,114,255,0.4);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(0,114,255,0.6);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>📞 Contact Consultancy</h2>
+    <div>
+        <a class="btn" href="/">Home</a>
+        <a class="btn" href="/colleges">Colleges</a>
+        <a class="btn" href="/admin">Admin</a>
+        <a class="btn" href="/contact">Contact</a>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Get in Touch 🎓</h1>
+    <p>We help students choose the best UG & PG colleges based on marks, state & career goals.</p>
+
+    <div class="card">
+        <h2>📧 Contact Information</h2>
+        <p><strong>Email:</strong> support@educationai.com</p>
+        <p><strong>Phone:</strong> +91 9693723676</p>
+        <p><strong>Location:</strong> India (Online Consultancy)</p>
+    </div>
+
+    <div class="card">
+        <h2>📝 Send Message</h2>
+        <form action="{{ url_for('contact') }}" method="POST">
+            <input type="text" name="name" placeholder="Your Name" class="input" required><br><br>
+            
+            <input type="email" name="email" placeholder="Your Email" class="input" required><br><br>
+            
+            <input type="text" name="state" placeholder="State" class="input"><br><br>
+            
+            <input type="number" name="marks" placeholder="Your Marks" class="input" required><br><br>
+            
+            <textarea name="message" placeholder="Your Message..." class="input" style="height:120px;"></textarea><br><br>
+            
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

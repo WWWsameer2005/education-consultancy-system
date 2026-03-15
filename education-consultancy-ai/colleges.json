@@ -1,0 +1,174 @@
+[
+{
+"id":1,
+"name":"Sapthgiriri NPS",
+"location":"Bangalore",
+"state":"Karnataka",
+"rating":4.9,
+"image":"https://i.postimg.cc/7hfXqnTS/snpsu.jpg",
+
+"courses":["B.Tech","MBBS","MCA","MBA","BCA","BBA"],
+
+"course_details":[
+{"course":"B.Tech","fees":"8L - 11L","eligibility":"10+2 : 45%","exams":"COMEDK UGET, KCET"},
+{"course":"MBBS","fees":"8.2L","eligibility":"10+2 : 50%","exams":"NEET"},
+{"course":"MBA","fees":"5L","eligibility":"Graduation","exams":"Karnataka PGCET"},
+{"course":"MCA","fees":"5L","eligibility":"Graduation","exams":"KMAT"},
+{"course":"BCA","fees":"4.5L","eligibility":"10+2 : 45%","exams":"CBSE 12th"}
+]
+},
+
+{
+"id":2,
+"name":"Amity University",
+"location":"Noida",
+"state":"Uttar Pradesh",
+"rating":4.9,
+"image":"https://i.postimg.cc/NjDc9QnY/amity-university.jpg",
+
+"courses":["B.Tech","M.Tech","MBA","BBA","BCA"],
+
+"course_details":[
+{"course":"B.Tech","fees":"7.5L - 20.4L","eligibility":"10+2 : 50-60%","exams":"CUET"},
+{"course":"MBA","fees":"6.4L - 15.8L","eligibility":"Graduation : 50%","exams":"MAT, NMAT"},
+{"course":"M.Tech","fees":"1.6L - 6L","eligibility":"Graduation : 50%","exams":"CUET-PG"},
+{"course":"BBA","fees":"5.1L - 16.7L","eligibility":"10+2 : 55%","exams":"CUET"},
+{"course":"BCA","fees":"7.2L - 9.6L","eligibility":"10+2 : 50%","exams":"CUET"}
+]
+},
+
+{
+"id":3,
+"name":"South Asian University",
+"location":"Delhi",
+"state":"Delhi",
+"rating":4.6,
+"image":"https://i.postimg.cc/k55BD1fW/South-Asian-University-Campus.jpg",
+
+"courses":["B.Tech","MSc","MBA"],
+
+"course_details":[
+{"course":"B.Tech","fees":"8.8L","eligibility":"10+2 : 65%","exams":"JEE Main"},
+{"course":"M.Sc","fees":"1.4L - 2.8L","eligibility":"Graduation : 55%","exams":"CUET-PG"},
+{"course":"MBA","fees":"5.3L","eligibility":"Graduation : 50%","exams":"MAT, XAT"}
+]
+},
+
+{
+"id":4,
+"name":"Noida International University",
+"location":"Noida",
+"state":"Uttar Pradesh",
+"rating":4.5,
+"image":"https://i.postimg.cc/htmqs9v6/niu.jpg",
+
+"courses":["B.Tech","MBA","BBA"],
+
+"course_details":[
+{"course":"B.Tech","fees":"4.4L - 12L","eligibility":"10+2 : 45-50%","exams":"NSAT, CUET"},
+{"course":"MBA","fees":"4L - 6.7L","eligibility":"Graduation : 50%","exams":"MAT, XAT"},
+{"course":"BBA","fees":"3.6L - 4.9L","eligibility":"10+2 : 50%","exams":"CUET"}
+]
+},
+
+{
+"id":5,
+"name":"ATLAS SkillTech",
+"location":"Mumbai",
+"state":"Maharashtra",
+"rating":4.9,
+"image":"https://i.postimg.cc/PqLv2VYP/atlas-university.jpg",
+
+"courses":["B.Tech","B.Des","MBA"],
+
+"course_details":[
+{"course":"MBA","fees":"11.6L","eligibility":"Graduation : 50%","exams":"MAT, NMAT"},
+{"course":"B.Tech","fees":"19.5L","eligibility":"10+2 : 50%","exams":"MHT CET, JEE Main"},
+{"course":"B.Des","fees":"26.8L","eligibility":"10+2","exams":"Design Entrance"}
+]
+},
+
+{
+"id":6,
+"name":"Reva University",
+"location":"Bangalore",
+"state":"Karnataka",
+"rating":4.3,
+"image":"https://i.postimg.cc/zvYhLwL1/reva-university.jpg",
+
+"courses":["BTech","B.Sc","M.Tech"],
+
+"course_details":[
+{"course":"B.Tech","fees":"6.8L","eligibility":"10+2 : 45%","exams":"COMEDK, Uni-GAUGE"},
+{"course":"M.Tech","fees":"5.5L","eligibility":"Graduation : 50%","exams":"PGCET"},
+{"course":"B.Sc","fees":"1.2L - 1.6L","eligibility":"10+2 : 45%","exams":"KCET"}
+]
+},
+
+{
+"id":7,
+"name":"Galgotias University",
+"location":"Noida",
+"state":"Uttar Pradesh",
+"rating":4.7,
+"image":"https://i.postimg.cc/65NqC5M6/Galgotias-university.jpg",
+
+"courses":["Engineering"],
+
+"course_details":[
+{"course":"B.Tech","fees":"4.4L - 6.6L","eligibility":"10+2 : 50%","exams":"JEE Main"},
+{"course":"MBA","fees":"1.8L - 6.3L","eligibility":"Graduation : 50%","exams":"MAT, NMAT"},
+{"course":"BBA","fees":"3.3L - 4.4L","eligibility":"10+2 : 50%","exams":"CUET"}
+]
+},
+
+{
+"id":8,
+"name":"Acharya Institute",
+"location":"Bangalore",
+"state":"Karnataka",
+"rating":4.9,
+"image":"https://i.postimg.cc/nLwYLQYb/Acharya-university.jpg",
+
+"courses":["B.Tech","MBA"],
+
+"course_details":[
+{"course":"B.Tech","fees":"6.8L - 10.5L","eligibility":"10+2 : 45%","exams":"COMEDK, KCET"},
+{"course":"MBA","fees":"1.2L","eligibility":"Graduation : 50%","exams":"KMAT"}
+]
+},
+
+{
+"id":9,
+"name":"Sharda University",
+"location":"Noida",
+"state":"Uttar Pradesh",
+"rating":4.4,
+"image":"https://i.postimg.cc/Nj61Rz6x/sharda-university.jpg",
+
+"courses":["B.Tech","MBA","MBBS"],
+
+"course_details":[
+{"course":"B.Tech","fees":"5.7L - 13.6L","eligibility":"10+2 : 50%","exams":"SUAT, JEE Main"},
+{"course":"MBA","fees":"8L - 9.6L","eligibility":"Graduation : 50%","exams":"MAT, XAT"},
+{"course":"MBBS","fees":"57.1L","eligibility":"10+2 : 50%","exams":"NEET"}
+]
+},
+
+{
+"id":10,
+"name":"SRM University",
+"location":"Chennai",
+"state":"Tamil Nadu",
+"rating":4.2,
+"image":"https://i.postimg.cc/d1tmsjyK/srm-university.jpg",
+
+"courses":["B.Tech","MBA","M.Tech"],
+
+"course_details":[
+{"course":"B.Tech","fees":"4L - 14L","eligibility":"10+2","exams":"SRMJEEE"},
+{"course":"MBA","fees":"5L - 6L","eligibility":"Graduation : 50%","exams":"MAT, NMAT"},
+{"course":"M.Tech","fees":"2L - 3L","eligibility":"Graduation","exams":"GATE"}
+]
+}
+]

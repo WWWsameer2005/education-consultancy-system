@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Register | Education AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#141e30,#243b55);
+    overflow:hidden;
+}
+
+/* Background Zigzag Effect */
+
+body::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:
+    repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.03),
+        rgba(255,255,255,0.03) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    z-index:0;
+}
+
+/* Glass Card */
+
+.register-box{
+    position:relative;
+    z-index:1;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    padding:40px;
+    border-radius:18px;
+    width:350px;
+    text-align:center;
+    box-shadow:0 15px 50px rgb(146, 145, 145);
+    color:white;
+    transition:0.4s;
+}
+
+/* Card Hover Effect */
+
+.register-box:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:0 15px 50px rgba(0,0,0,0.6);
+}
+
+h2{
+    margin-bottom:25px;
+}
+
+/* Input Fields */
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:14px;
+}
+
+/* Input Glow */
+
+input:focus{
+    box-shadow:0 0 10px #00eaff;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background: linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+/* Button Hover */
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow:0 5px 20px rgba(92, 70, 216, 0.5);
+}
+
+/* Link */
+
+a{
+    display:block;
+    margin-top:15px;
+    color:#00eaff;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* Error/Success Messages */
+.message {
+    margin-top: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff4d4d;
+}
+
+.success {
+    background: rgba(0, 255, 150, 0.2);
+    color: #00ff99;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="register-box">
+
+<h2>🎓 Admin Register</h2>
+
+<form method="POST">
+
+<input type="text" name="username" placeholder="Username" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<button type="submit">Register</button>
+
+</form>
+
+<!-- Display error or success messages -->
+{% if error %}
+    <div class="message error">{{ error }}</div>
+{% endif %}
+{% if success %}
+    <div class="message success">{{ success }}</div>
+{% endif %}
+
+<a href="/admin">⬅ Back to Login</a>
+
+</div>
+
+</body>  
+</html>

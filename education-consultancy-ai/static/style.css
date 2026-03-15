@@ -1,0 +1,185 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height:100vh;
+    color:white;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.navbar h2{
+    font-weight:600;
+}
+
+/* Container */
+.container{
+    padding:40px;
+}
+
+/* Glass Card */
+.card{
+    background: rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:20px;
+    margin:15px;
+    backdrop-filter: blur(20px);
+    border:1px solid rgba(255,255,255,0.15);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* Buttons */
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:10px;
+    background: linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    text-decoration:none;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Grid for college cards */
+.college-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+/* Images */
+.card img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:10px;
+    transition:0.4s;
+}
+
+.card img:hover{
+    transform:scale(1.05);
+}
+
+/* Dashboard Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius:15px;
+    overflow:hidden;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background: rgba(0,0,0,0.4);
+}
+
+tr:hover{
+    background: rgba(255,255,255,0.08);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .container{
+        padding:20px;
+    }
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Stylish Home Button */
+.home-btn {
+    position: relative;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.home-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 114, 255, 0.6);
+}
+
+/* Shine Effect */
+.home-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-25deg);
+    transition: 0.5s;
+}
+
+.home-btn:hover::before {
+    left: 125%;
+}
+
+
+
+.glass-btn {
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
+
+.glass-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}
